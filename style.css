@@ -1,41 +1,49 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Sidebar with new background color */
-.sidebar {
-    height: 100vh;            /* full height */
+body {
+    display: flex;
+    flex-direction: row; /* sidebar left, content right */
+}
+
+/* Sidebar container holds About Me + Sidebar menu */
+.sidebar-container {
     width: 220px;
-    position: fixed;           /* stay fixed on the left */
-    top: 0;
-    left: 0;
-    background-color: #1abc9c; /* <-- new sidebar color */
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1abc9c; /* sidebar menu background */
+}
+
+/* About Me section */
+.about-me {
+    background-color: #601EF9;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    background-color: #1abc9c; /* sidebar menu background */
+    flex-grow: 1; /* fills remaining vertical space below About Me */
     display: flex;
     flex-direction: column;
 }
 
-.sidebar h2 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .sidebar a {
     padding: 15px 20px;
+    color: white;
     text-decoration: none;
-    color: #fff;
-    display: block;
-    transition: background 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: #16a085; /* slightly darker on hover */
+    background-color: #16a085;
 }
 
 /* Main content */
 .content {
-    margin-left: 220px;  /* same as sidebar width */
+    flex-grow: 1; /* take remaining horizontal space */
     padding: 20px;
 }
