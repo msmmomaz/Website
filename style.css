@@ -9,6 +9,13 @@ body {
     flex-direction: row; /* sidebar left, content right */
 }
 
+.large-header {
+    font-size: 5.5rem;      /* makes it really large */
+    font-weight: bold;     /* optional: makes it bold */
+    color: #601EF9;        /* optional: change color */
+    margin-bottom: 21px;   /* spacing below */
+}
+
 /* Sidebar container holds About Me + Sidebar menu */
 .sidebar-container {
     width: 220px;
@@ -16,6 +23,17 @@ body {
     flex-direction: column;
     background-color: #1abc9c; /* sidebar menu background */
 }
+
+.no-bullets {
+    list-style: none;   /* removes bullets */
+    padding: 0px;;         /* removes default left padding */
+    margin: 0;          /* removes default top/bottom margin */
+}
+
+.no-bullets li {
+    padding: 2px 0;     /* optional: spacing between items */
+}
+
 
 /* About Me section */
 .about-me {
