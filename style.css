@@ -43,20 +43,20 @@ body {
 }
 
 /* Sidebar navigation */
-.sidebar {
+.resources {
     background-color: #1abc9c; /* sidebar menu background */
     flex-grow: 1; /* fills remaining vertical space below About Me */
     display: flex;
     flex-direction: column;
 }
 
-.sidebar a {
+.resources a {
     padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
 
-.sidebar a:hover {
+.resources a:hover {
     background-color: #16a085;
 }
 
